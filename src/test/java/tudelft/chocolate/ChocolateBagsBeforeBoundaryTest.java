@@ -28,4 +28,12 @@ public class ChocolateBagsBeforeBoundaryTest {
         int result = new ChocolateBags().calculate(4, 2, 3);
         Assertions.assertEquals(3, result);
     }
+
+    // creacion de test para el metodo calculate
+    public void totalIsTooBig(int small, int big, int total, int expected){
+        ChocolateBags bags = new ChocolateBags();
+        int result =
+                bags.calculate(small, big, total);
+        Assertions.assertEquals(expected, result);
+    }
 }

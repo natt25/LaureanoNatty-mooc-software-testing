@@ -21,4 +21,5 @@ public class ChocolateBagsTest3 {
         int result = new ChocolateBags().calculate(small, big, total);
         Assertions.assertEquals(expectedResult, result);
     }
+
 }

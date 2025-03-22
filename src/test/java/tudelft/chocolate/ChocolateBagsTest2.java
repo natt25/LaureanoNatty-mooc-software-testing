@@ -22,4 +22,5 @@ public class ChocolateBagsTest2 {
         Assertions.assertEquals(expectedResult, result);
     }
 
+
 }
