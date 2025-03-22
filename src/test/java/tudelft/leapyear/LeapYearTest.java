@@ -1,9 +1,17 @@
 package tudelft.leapyear;
 
+import org.jetbrains.annotations.TestOnly;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class LeapYearTest {
+    @Test
+    public void test01() {
+        LeapYear ly = new LeapYear();
+        boolean leap = ly.isLeapYear(2016);
+        Assertions.assertTrue(leap);
+    }
+
     @Test
     public void leapYearsThatAreNonCenturialYears() {
         LeapYear ly = new LeapYear();

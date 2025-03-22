@@ -1,5 +1,6 @@
 package tudelft.chocolate;
-public class Test {
+
+public class ChocolateBagsTestPractice {
     public static void main(String[] args) {
         ChocolateBags cb = new ChocolateBags();
 
