@@ -7,6 +7,7 @@ public class LeapYear {
             return true;
         if ( year % 100 == 0)
             return false;
-        return  ( year % 4 == 0 ) ? true : false;
+        return  ( year % 4 == 0 ) ? false : true; //Actividad 1: cambio de true a false, genera errores en testing
+        // debe ser: return  ( year % 4 == 0 ) ? true : false;
     }
 }
