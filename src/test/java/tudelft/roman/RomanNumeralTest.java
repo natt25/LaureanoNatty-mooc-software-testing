@@ -7,14 +7,14 @@ public class RomanNumeralTest {
 
 
     @Test
-    public void singleNumber() {
+    public void singleNumber() { // Prueba 1
         RomanNumeral roman = new RomanNumeral();
         int result = roman.convert("I");
         Assertions.assertEquals(1, result);
     }
 
     @Test
-    public void numberWithManyDigits() {
+    public void numberWithManyDigits() { // Prueba 2
         RomanNumeral roman = new RomanNumeral();
         int result = roman.convert("VIII");
         Assertions.assertEquals(8, result);
@@ -33,4 +33,4 @@ public class RomanNumeralTest {
         int result = roman.convert("XLIV");
         Assertions.assertEquals(44, result);
     }
-}
+    }
