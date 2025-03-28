@@ -51,5 +51,15 @@ public class ChocolateBagsTest {
     }
 
 //    PRUEBA 2: partición "solo barras pequeñas"
-
+    @ParameterizedTest(name = "small={0}, big={1}, total={2}, result={3}")
+    @CsvSource({
+            "3,0,3,3",    // 3 small (3) = 3
+            "2,0,2,2",    // 2 small (2) = 2
+            "4,0,4,4",    // 4 small (4) = 4
+            "1,0,1,1"     // 1 small (1) = 1
+    })
+    public void needOnlySmallBars(int small, int big, int total, int expectedResult) {
+        int result = new ChocolateBags().calculate(small, big, total);
+        Assertions.assertEquals(expectedResult, result);
+    }
 }
